@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="pt-br">
-
 <head>
     <title>Login :: Sistema</title>
     <!-- Required meta tags -->
@@ -104,6 +103,7 @@
         });
 
     </script>
+    <script src="js/functions.js"></script>
 </body>
 
 </html>

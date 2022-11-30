@@ -1,3 +1,7 @@
+<?php
+require_once('includes/cabecalho.php');
+?>
+
 <div class="container ">
     <div class="row mt-5">
         <div class="col">
@@ -36,24 +40,7 @@
 
                     
                 
-                    <tr>
-                        <th scope="row">ID</th>
-                        <td><img src="" width="50px"></td>
-                        <td>Nome</td>
-                        <td>R$ X.XX</td>
-                        <td>Descricao</td>
-                        <td>Categoria</td>
-                        <td>Usuario</td>
-                        <td>
-                            <div class="d-grid gap-2">
-                                <!-- Os botoões abaixo devem invocar funções JS para edição e remoção: -->
-                                <!-- onclick="nomefuncao" -->
-                                <a href="#" class="btn btn-danger btn-sm"><i class="bi bi-x-circle-fill"></i></a>
-                                <a href="#" class="btn btn-primary btn-sm">
-                                <i class="bi bi-pencil-square"></i></a>
-                            </div>
-                        </td>
-                    </tr>
+
                  
 
 
@@ -100,16 +87,7 @@
                         <select class="form-select" aria-label="Default select example" id="categoriaProduto" name="categoriaProduto">
                             <option selected value="-1">Escolha a categoria</option>
                             <!-- Os campos abaixo deverão ser populados automaticamente com PHP: -->
-                            <?php
-                                // Puxar as categorias do bd:
-                                $r_categorias = Categoria::Listar();
-                                // Mostrar as categorias pelo foreach:
-                                foreach($r_categorias as $linha){
-                            ?>
-
-                                <option value="<?=$linha['id']; ?>"><?=$linha['nome_categoria']; ?></option>
-
-                            <?php } ?>
+                           
                             
                         </select>
                     </div>
