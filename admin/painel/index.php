@@ -5,7 +5,7 @@ require_once('includes/cabecalho.php');
 <div class="container ">
     <div class="row mt-5">
         <div class="col">
-            <h2>Olá <span>%nome_usuario%</span>!</h2>
+            <h2>Olá <span id="nomeUsuario">%nome_usuario%</span>!</h2>
         </div>
     </div>
     <div class="row justify-content-end">
@@ -38,11 +38,7 @@ require_once('includes/cabecalho.php');
                 <!-- O corpo da tabela deve ser preenchido dinâmicamente com JavaScript. -->
                 <tbody id="corpoTabela">
 
-                    
                 
-
-                 
-
 
                 </tbody>
             </table>
@@ -117,7 +113,8 @@ require_once('includes/cabecalho.php');
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            <form action="index.php" method="POST">
+                <!-- Return false impede que a página seja atualizada: -->
+            <form id="formCategoria" onsubmit="return false;">
                     <div class="mb-3">
                         <label for="nomeCategoria" class="form-label">Nome da Categoria:</label>
                         <input type="text" class="form-control" name="nomeCategoria" id="nomeCategoria" aria-describedby="categoriaHelp">
