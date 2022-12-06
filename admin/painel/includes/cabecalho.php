@@ -27,7 +27,7 @@
         </li>
         <li class="nav-item">
           <!-- Invoque uma função JS para sair abaixo: -->
-          <a class="nav-link" href="#">Sair</a>
+          <a class="nav-link" href="#" onclick="sair()">Sair</a>
         </li>
       </ul>
     </div>
